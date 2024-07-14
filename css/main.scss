@@ -666,14 +666,15 @@ main {
                 display: flex;
                 margin-top: 20px;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
 
                 @media only screen and (max-width:767px) {
                     justify-content: center;
+                    gap:10px;
                 }
 
                 flex-wrap: wrap;
-                gap: 10px;
+                gap: 20px;
 
                 .loading {
                     font-size: 30px;
