@@ -38,5 +38,11 @@ function displayData(products) {
     }
 }
 
+store_search_box.addEventListener('keyup',(e)=>{
+console.log(e.target.value);
+const filteredData = ApiData.filter((ele)=>ele.title.toLowerCase().includes(e.target.value.toLowerCase()))
+displayData(filteredData);
+})
+
 displayData(ApiData)
 
